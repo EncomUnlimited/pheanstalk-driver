@@ -1,18 +1,7 @@
 {
-    "name": "bernard/pheanstalk-driver",
+    "name": "lgno/pheanstalk-driver",
     "description": "Pheanstalk driver for Bernard",
     "license": "MIT",
-    "keywords": ["message queue", "message", "queue", "bernard", "pheanstalk", "beanstalk"],
-    "homepage": "https://github.com/bernardphp/pheanstalk-driver",
-    "authors": [
-        {
-            "name": "Henrik Bjornskov"
-        },
-        {
-            "name": "Márk Sági-Kazár",
-            "email": "mark.sagikazar@gmail.com"
-        }
-    ],
     "require": {
         "php": "^5.6 || ^7.0 || ^8.0",
         "bernard/bernard": "dev-master",
@@ -23,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bernard\\Driver\\Pheanstalk\\": ""
+            "LGNO\\Driver\\Pheanstalk\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
