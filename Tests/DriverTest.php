@@ -18,8 +18,7 @@ final class DriverTest extends \PHPUnit\Framework\TestCase
      */
     private $driver;
 
-    public function setUp()
-    {
+    public function setUp(): void {
         $this->pheanstalk = $this->prophesize(PheanstalkInterface::class);
 
         $this->driver = new Driver($this->pheanstalk->reveal());
@@ -28,16 +27,14 @@ final class DriverTest extends \PHPUnit\Framework\TestCase
     /**
      * @test
      */
-    public function it_is_a_driver()
-    {
+    public function it_is_a_driver(): void {
         $this->assertInstanceOf(\Bernard\Driver::class, $this->driver);
     }
 
     /**
      * @test
      */
-    public function it_peeks_a_queue()
-    {
+    public function it_peeks_a_queue(): void {
         $this->assertEquals([], $this->driver->peekQueue('my-queue2'));
     }
 }
