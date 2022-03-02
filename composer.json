@@ -28,7 +28,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0"
+            "dev-master": "php8.0-dev"
         }
     },
     "prefer-stable": true,
